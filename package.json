@@ -1,0 +1,46 @@
+{
+  "name": "amiibo-scanner",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "APP_ENV=development expo start --dev-client",
+    "build:development": "eas build --platform android --profile development",
+    "build:preview": "eas build --platform android --profile preview",
+    "build:production": "eas build --platform android --profile production",
+    "publish:preview": "APP_ENV=preview expo publish --platform android --release-channel preview",
+    "publish:production": "APP_ENV=production expo publish --platform android --release-channel production"
+  },
+  "dependencies": {
+    "@react-navigation/bottom-tabs": "^6.0.9",
+    "@react-navigation/native": "^6.0.6",
+    "axios": "^0.24.0",
+    "expo": "~44.0.0",
+    "expo-av": "~10.2.0",
+    "expo-dev-client": "~0.7.2",
+    "expo-font": "~10.0.4",
+    "expo-splash-screen": "~0.14.1",
+    "expo-status-bar": "~1.2.0",
+    "expo-updates": "~0.11.3",
+    "nanoid": "^3.1.30",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-native": "0.64.3",
+    "react-native-device-info": "^8.4.8",
+    "react-native-gesture-handler": "~2.1.0",
+    "react-native-image-colors": "^1.5.0",
+    "react-native-material-menu": "^2.0.0",
+    "react-native-nfc-manager": "^3.11.2",
+    "react-native-reanimated": "~2.3.1",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-screens": "~3.10.1",
+    "react-native-vector-icons": "^9.0.0",
+    "react-query": "^3.34.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@types/react": "~17.0.21",
+    "@types/react-native": "~0.64.12",
+    "@types/react-native-vector-icons": "^6.4.10",
+    "typescript": "~4.3.5"
+  },
+  "private": true
+}

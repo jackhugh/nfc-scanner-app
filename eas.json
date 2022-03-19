@@ -1,0 +1,41 @@
+{
+	"cli": {
+		"version": ">= 0.42.4"
+	},
+	"build": {
+		"development": {
+			"distribution": "internal",
+			"releaseChannel": "development",
+			"developmentClient": true,
+			"env": {
+				"APP_ENV": "development"
+			},
+			"android": {
+				"image": "latest"
+			}
+		},
+		"preview": {
+			"distribution": "internal",
+			"releaseChannel": "preview",
+			"env": {
+				"APP_ENV": "preview"
+			},
+			"android": {
+				"image": "latest"
+			}
+		},
+		"production": {
+			"distribution": "internal",
+			"releaseChannel": "production",
+			"env": {
+				"APP_ENV": "production"
+			},
+			"android": {
+				"image": "latest"
+			}
+		}
+	},
+	"submit": {
+		"production": {}
+	}
+}
